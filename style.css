@@ -17,14 +17,14 @@ header > div{
 header > nav{
     margin-right: 20px;
 }
-#imgcentral{
+#mainImg{
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
 }
-#imgcentral > img{
+#mainImg > img{
     height: 400px;
 }
 #blog{
@@ -33,4 +33,20 @@ header > nav{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+}
+#formulary{
+    background-color: aqua;
+    height: 300px;
+    width: 100%;
+    font-size: 50px;
+    justify-content: center;
+}
+#formulary > form > input{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+#formulary #question{
+    width: 300px;
+    height: 100px;
 }
