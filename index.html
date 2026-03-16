@@ -18,11 +18,11 @@
         <nav>
             <a href="#">Home</a>
             <a href="#">Products</a>
-            <a href="#">About Us</a>
+            <a href="#footer">About Us</a>
         </nav>
 
         <div id="profile">
-            <img src="imgs/profile.png" alt="Profile">
+            <a href="#formulario"><img src="imgs/profile.png" alt="Profile"></a>
             <span>Contact US!</span>
         </div>
 
@@ -130,15 +130,26 @@
         </form>
     </div>
 
-    <footer>
-
+    <footer id="footer">
+        <div id="footer-left">
+            <strong>Sweet & Sour</strong>
+            <span>Online Candy Store and Delivery</span>
+        </div>
+        <div id="footer-center">
+            <span id="footer-title">© 2026 Sweet & Sour</span>
+            <span>All rights reserved</span>
+        </div>
+        <div id="footer-right">
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
     </footer>
 
     <script>
 
         document.getElementById('formulario').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Mensagem enviada');
+            alert('Fomulário enviado!!');
             this.reset();
         });
 

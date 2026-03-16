@@ -27,7 +27,7 @@ header {
 }
 
 span {
-    font-size: 30px;
+    font-size: 25px;
     color: #F8F8F8;
 }
 
@@ -38,12 +38,16 @@ span:hover {
 
 nav {
     display: flex;
-    gap: 40px;
+    gap: 50px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    margin-right: 200px;
 }
 
 nav > a {
     color: #F8F8F8;
     text-decoration: none;
+    font-size: 40px;
 }
 
 a:hover {
@@ -57,9 +61,9 @@ a:hover {
     flex-direction: column;
 }
 
-#profile > img {
-    width: 200px;
-    height: 167px;
+#profile > a > img {
+    width: 150px;
+    height: 127px;
 }
 
 #banner {
@@ -99,7 +103,7 @@ section {
 .cards {
     background-color: #E9E9E9;
     width: 350px;
-    height: 500px;
+    height: 550px;
     border-radius: 40px;
     margin: 60px;
     display: flex;
@@ -121,6 +125,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    flex: 1;
+    justify-content: space-between;
 }
 
 .card-info > h3 {
@@ -138,7 +144,7 @@ section {
     font-size:30px;
     color: #000000;
     text-align: right;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .container {
@@ -179,13 +185,13 @@ section {
     border-radius: 30px;
     background-color: #F8F8F8;
     font-size: 20px;
-    outline: none;
+
 }
 
 .forms-group > label {
     font-size: 22px;
     margin-bottom: 8px;
-    color: #333;
+    color: #7D7D7D;
 }
 
 .forms-group > textarea {
@@ -195,8 +201,6 @@ section {
     border-radius: 20px;
     background-color: #F8F8F8;
     font-size: 20px;
-    outline: none;
-    resize: none;
     height: 160px;
 }
 
@@ -209,7 +213,6 @@ section {
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
-    letter-spacing: 1px;
     margin-top: 10px;
 }
 
@@ -217,3 +220,54 @@ section {
     background-color: #ef4444;
 }
 
+#footer {
+    background-color: #65CE54;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-top: 60px;
+    height: 300px;
+    width: 100%;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #F8F8F8;
+    font-size: 18px;
+}
+
+#footer-left > strong {
+    font-size: 30px;
+    color: #F8F8F8;
+}
+
+#footer-center {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #F8F8F8;
+    font-size: 18px;
+}
+
+#footer-title {
+    font-size: 30px;
+}
+
+#footer-right {
+    display: flex;
+    gap: 40px;
+    align-self: flex-end;
+}
+
+#footer-right > a {
+    color: #F8F8F8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#footer-right > a:hover {
+    text-decoration: underline;
+}
