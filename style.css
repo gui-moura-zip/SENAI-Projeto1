@@ -103,12 +103,117 @@ section {
     border-radius: 40px;
     margin: 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .img-cand {
     width: 300px;
     height: 300px;
     border-radius: 20px;
+    margin-top: 30px;
+}
+
+.card-info {
+    width: 300px;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card-info > h3 {
+    font-size: 25px;
+    color: #000000;
+    text-align: left;
+}
+
+.card-info > p {
+    font-size: 25px;
+    color: #3C3C3C;
+}
+
+.card-info .price {
+    font-size:30px;
+    color: #000000;
+    text-align: right;
     margin-top: 20px;
 }
+
+.container {
+    background-color: #E9E9E9;
+    width: 620px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > h2 {
+    color: #042801;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    width: 100%;
+}
+
+.forms-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forms-group > input {
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 30px;
+    background-color: #F8F8F8;
+    font-size: 20px;
+    outline: none;
+}
+
+.forms-group > label {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.forms-group > textarea {
+    width: 100%;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+    height: 160px;
+}
+
+#formulario > button {
+    background-color: #F87171;
+    color: white;
+    border: none;
+    padding: 18px 60px;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#formulario > button:hover {
+    background-color: #ef4444;
+}
+

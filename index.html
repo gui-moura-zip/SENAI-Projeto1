@@ -25,6 +25,7 @@
             <img src="imgs/profile.png" alt="Profile">
             <span>Contact US!</span>
         </div>
+
     </header>
 
     <div id="banner">
@@ -40,26 +41,110 @@
     <section>
         <div class="cards">
             <img src="imgs/mint.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Mint Candy</h3>
+                <p>Refreshing, delicious, and sugary!</p>
+                <span class="price">$0.10 unity</span>
+            </div>
         </div>
+
         <div class="cards">
             <img src="imgs/corn.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Corn Candy</h3>
+                <p>They taste like corn! Hmm.
+                    They remind me of childhood</p>
+                <span class="price">$0.20 unity</span>
+            </div>
         </div>
+
         <div class="cards">
             <img src="imgs/jelly.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Jelly Candy</h3>
+                <p>So many colors and flavors!
+                    They help maintain the daily sugar intake.</p>
+                <span class="price">$10.59 unity</span>
+            </div>
         </div>
     </section>
 
-        <section>
+    <section>
         <div class="cards">
             <img src="imgs/teddy.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Gummy Bears Candy</h3>
+                <p>They are so cuuuuute and sweet,
+                    I heard they used to sing!</p>
+                <span class="price">$8.99 unity</span>
+            </div>
         </div>
+
         <div class="cards">
             <img src="imgs/bubblegum.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Bubblegum</h3>
+                <p>Chewing gum to pass the time,
+                    get bigger bubbles and impress
+                    your friends!</p>
+                <span class="price">$0.50 unity</span>
+            </div>
         </div>
+
         <div class="cards">
             <img src="imgs/chocolate.png" alt="Candy" class="img-cand">
+            <div class="card-info">
+                <h3>Chocolate</h3>
+                <p>Milk chocolate, dark chocolate,
+                    chocolate with nuts,
+                    something for every taste
+                    and mood!</p>
+                <span class="price">$1.49 unity</span>
+            </div>
         </div>
     </section>
 
+    <div class="container">
+        <h2> Contact Us!</h2>
+        <form id="formulario">
+
+            <div class="forms-group">
+                <input type="text" required placeholder="Name">
+            </div>
+
+            <div class="forms-group">
+                <input type="number" required placeholder="Phone">
+            </div>
+
+            <div class="forms-group">
+                <input type="email" required placeholder="Email">
+            </div>
+
+            <div class="forms-group">
+                <label for="">Leave your question</label>
+                <textarea rows="4"></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+
+        document.getElementById('formulario').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Mensagem enviada');
+            this.reset();
+        });
+
+    </script>
+
+
 </body>
+
 </html>
